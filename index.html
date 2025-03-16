@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B11-A6</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+          .active {
+              border-radius: 4px;
+              border: 1px solid #422AD5;
+  
+              background: #422AD5;
+              color: white;
+          }
+      </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar bg-gray-200 shadow-sm px-12 fixed w-full z-20">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+               
+              </div>
+              <a class="btn btn-ghost text-xl"><h2>English</h2> <img src="./assets/logo.png" alt=""> <h2>জানালা</h2></a>
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+            </div>
+            <div class="navbar-end gap-3">
+              <a class="btn border-[#422AD5] border-2"><img src="./assets/fa-circle-question.png" alt="">  FAQ</a>
+              <a class="btn border-[#422AD5] border-2"><img src="./assets/fa-book-open.png" alt="">  Learn</a>
+              <a class="btn border-[#422AD5] border-2"><img src="./assets/fa-arrow-right-from-bracket.png" alt="">  Logout</a>
+
+            </div>
+          </div>
+    </header>
+
+
+
+<main>
+
+    <!-- banner section -->
+   <section class="pt-10">
+    <div class="flex justify-between items-center px-12">
+        <div><h2 class=" mb-3 font-bold text-4xl"> <span class="text-[#00BCFF]">English</span> is Easy!!</h2>
+            <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>
+                আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br>
+                যাবে অন্য একটি Level এ</p>
+
+            <div class="mt-6">
+                <input type="text" placeholder="neutral" class="input input-neutral" />
+                <input type="text" placeholder="neutral" class="input input-neutral mt-3" /> <br>
+                <button class="btn btn-primary mt-3">Primary</button>
+            </div>
+        </div>
+
+
+
+
+        <div>
+         <img class="w-[504px]" src="./assets/hero-student.png" alt="">
+        </div>
+    </div>
+   </section>
+
+
+   <!-- learn section -->
+        <section class="mt-20">
+           <h2 class="py-8 text-5xl text-center font-bold"> <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h2>
+
+            <div id="btn-show" class="flex justify-center items-center gap-4 mt-6">        
+    
+            </div>
+
+          <div class="bg-[#F8F8F8] h-full py-7 px-3 mt-8">
+            <div id="loading" class="flex flex-col items-center hidden">
+              <span class="loading loading-dots loading-lg"></span>
+
+            </div>
+            <div id="lession-show-section">
+              <div class="py-6">
+                  <h3 class="text-center text-gray-400">আপনি এখনো কোন Lesson Select করেন ন</h3>
+                  <p class="py-4 text-center text-4xl">একটি Lesson Select করুন।</p>
+              </div>
+          </div>
+          </div>
+
+        </section>
+
+
+    <!-- FAQ section -->
+    <section class="mt-28">
+        <h2 class="py-8 text-5xl text-center font-bold"> <span class="text-[#00BCFF]">Frequently</span> Asked Questions</h2>
+
+
+        <div class="mt-8 px-12">
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">1. the difference between var, let, and const
+                </div>
+                <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+              </div>
+              <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">2. I forgot my password. What should I do?</div>
+                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+              </div>
+              <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">3. How do I update my profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+
+              <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">4. How do I update my profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+
+              <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">5. How do I update my profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+
+
+
+
+    <footer>
+
+        <section class="mt-20 border-t py-8">
+            <div class="flex justify-between items-center gap-3 px-12">
+                <div>
+                <div class="flex items-center gap-2 font-bold text-xl py-3"> <h2>English</h2> <img src="./assets/logo.png" alt=""> <h2>জানালা</h2>
+                
+                </div>
+                    
+                <h3 class="text-xl py-2">ইংরেজি শিখুন সহজে</h3>
+                <h4>Providing ED-Tech Applications since 2025</h4>
+            
+            </div>
+               
+
+
+
+                <div>
+
+                    <h3>FOLLOW US </h3>
+
+                    <div class="flex justify-center items-center gap-3 mt-4">
+                        <a href="#"><img src="./assets/fb-thumb.png" alt=""></a>
+                        <a href="#"><img src="./assets/youtube-thumb.png" alt=""></a>
+                        <a href="#"><img src="./assets/instagram-thumb.png" alt=""></a>
+                        <a href="#"><img src="./assets/github-thumb.png" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+
+
+
+  <script src="./script/API.js"></script>
+</body>
+</html>
